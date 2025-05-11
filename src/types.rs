@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     println!("Hello, world!");
 
     let mut x: i32 = 11;
@@ -21,6 +21,24 @@ fn main() {
 
     // array
 
-    // let base_array = [1, 2, 3, 4, 5];
-    // println!("The value of base_array is: {}", base_array[0]);
+    let base_array = [1, 2, 3, 4, 5];
+    println!("The value of base_array is: {}", base_array[0]);
+
+    let mut counter = 0;
+
+    loop {
+        counter += 1;
+
+        if counter == 5 {
+            break;
+        }
+
+        println!("Counter: {}", counter);
+    }
+
+    let nums = [3,2,1,9,8,7,0];
+
+    for el in nums {
+        println!("Element: {}", el);
+    }
 }
