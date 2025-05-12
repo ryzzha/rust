@@ -2,6 +2,7 @@
 
 mod types;
 mod binary_search;
+mod ownership;
 
 // const C: f32 = 32.0;
 
@@ -46,5 +47,6 @@ fn main() {
     // };
 
     // types::main()
-    binary_search::main()
+    // binary_search::main()
+    ownership::main()
 }
